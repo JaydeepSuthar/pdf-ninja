@@ -1,0 +1,25 @@
+{
+	"name": "pdf-ninja",
+	"version": "0.1.0",
+	"description": "A package for generating dynamic PDFs using Handlebars and Puppeteer.",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"No tests specified\" && exit 0"
+	},
+	"keywords": [
+		"pdf",
+		"generation",
+		"handlebars",
+		"puppeteer",
+		"pdf-ninja"
+	],
+	"author": {
+		"name": "Jaydeep Suthar",
+		"email": "technicaljade@gmail.com"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"handlebars": "^4.7.7",
+		"puppeteer": "^20.5.0"
+	}
+}
