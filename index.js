@@ -1,11 +1,11 @@
 const { readTemplate, compileTemplate, generatePDF } = require("./lib");
 
 /**
- * Generate Dyanmic PDF
- * @param {string} filePath HBS Template Path
+ * Generate Dynamic PDF
+ * @param {string} templatePath HBS Template Path
  * @param {Object.<string, unknown>} data
  */
-const generateDyanmicPDF = async (templatePath, data) => {
+const generateDynamicPDF = async (templatePath, data) => {
 	const hbsTemplate = await readTemplate(templatePath);
 
 	const htmlString = compileTemplate(hbsTemplate, data);
@@ -16,6 +16,6 @@ const generateDyanmicPDF = async (templatePath, data) => {
 };
 
 module.exports = {
-	generateDyanmicPDF,
+	generateDynamicPDF: generateDynamicPDF,
 	generateStaticPDF: generatePDF,
 };
